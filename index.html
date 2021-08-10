@@ -1,62 +1,230 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Home</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css"/>
-    </head>
-    <body class="p-3 mb-2 bg-dark text-white">
-        <div style="border: 2px solid white" class="container">
-            <header style="padding-top: 50px;">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <img src="./icons/personal.jpg" class="img-thumbnail" alt="Personal photo">
-                    </div>
-                    <div  style="padding-inline: 50px;"class="col-lg-9">
-                        <h1 id="title">Sachin B. Bhutekar</h1>
-                        <p id="sub-title">Aspiring Web Developer</p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./CSS/styles.css" />
 
-                        <nav style="color: white;">
-                            <button class="btn btn-light"><a href="icons/Sachin_Bhutekar_Resume_03_21.pdf">Resume</a></button>
-                            <button class="btn btn-light"><a href="projects.html">Projects</a></button>
-                            <button class="btn btn-light"><a href="courses.html">Certifications</a></button>
-                        </nav>
-                    </div>
-                </div>
-            </header>
-            <section >
-                <h3 style="text-align: center;"class="add-margin">About Me</h3>
-                <p>Hi! I'm Sachin Bhutekar, an aspiring Web Developer. After working for 1.5 years in Manufacturing Industry, 
-                    I decided to follow my passion and started learning programming from online sources. I also write blogs about my learnings (click on medium icon at bottom of the page to visit). I am currently living in Pune (Maharashtra, India).
-                    My Hobbies include reading books, travelling to holy places, hearing podcasts & watching inspiring biopics.
-                
-                </p>
+    <!-- Font Awesome for Icons -->
+    <script
+      src="https://kit.fontawesome.com/49362538be.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
 
-                <h3 style="text-align: center;" class="add-margin">Let's talk</h3>
-                    <p>Wanna get in touch or invite me for interview? Feel free to contact me via email at
-                    <i>sachinbhutekar24.12@gmail.com</i> or use media handles below 
-                    <p>
-            </section>
-            <footer style="padding-left: 75px;">
-                  <div class="row">
-                    <div class="column">
-                        <a href="https://www.linkedin.com/in/sachin-bhutekar-cs/" target="_blank"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="social-icons " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
-                        </svg></a>
-                    </div>
-                    <div class="column">
-                        <a href="https://sachin-bhutekar-cs.medium.com/" target="_blank"><img style="border: 1px solid black;" class="social-icons" src="./icons/medium-logo.png" alt="linkedin icon"></a>
-                    </div>
-                    <div class="column" >
-                        <a href="https://github.com/sachinbhutekarcs" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="social-icons" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                          </svg></a>
-                    </div>
-                    
-                  </div> 
-              </footer>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@200&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sachin Bhutekar Portfolio</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <span>Sachin Bhutekar</span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me"> About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"> My Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills"> My Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"> Contact Me</a>
+            </li>
+          </ul>
         </div>
-    </body>
+      </nav>
+    </section>
+    <main>
+      <section id="welcome-section" class="top-container">
+        <img class="eagle" src="images/eagle.png" alt="eagle-img" />
+        <img class="top-cloud" src="images/cloud.png" alt="cloud-img" />
+        <h1>Hi, I'm Sachin.</h1>
+        <h2>An Aspiring Web Developer</h2>
+        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img" />
+        <img
+          class="mountain-img"
+          src="images/mountain.png"
+          alt="mountain-img"
+        />
+      </section>
+      <section class="profile" id="about-me">
+        <img src="images/my_pic.png" alt="Sachin's DP" />
+        <h2>Hello.</h2>
+        <p class="intro">
+          I'm Sachin Bhutekar, an aspiring Web Developer. After working for 1.5
+          years in Manufacturing Industry, I decided to follow my passion and
+          started learning programming from online sources.
+        </p>
+      </section>
+      <hr />
+      <!-- <section id="projects">
+        <header>
+          <h2>My Projects</h2>
+        </header>
+        <div class="all-projects">
+          <div class="project-tile">
+            <img
+              id="project-img"
+              src="https://thumbs.dreamstime.com/z/isometric-programmer-coding-new-project-web-developer-programming-concept-landing-page-mobile-website-development-isometric-131224218.jpg"
+              alt=""
+            />
+            <a class="project-link" href=""
+              ><button class="btn-warning btn-block">Project</button></a
+            >
+          </div>
+          <div class="project-tile">
+            <img
+              id="project-img"
+              src="https://thumbs.dreamstime.com/z/isometric-programmer-coding-new-project-web-developer-programming-concept-landing-page-mobile-website-development-isometric-131224218.jpg"
+              alt=""
+            />
+            <a class="project-link" href=""
+              ><button class="btn-warning btn-block">Project</button></a
+            >
+          </div>
+          <div class="project-tile">
+            <img
+              id="project-img"
+              src="https://thumbs.dreamstime.com/z/isometric-programmer-coding-new-project-web-developer-programming-concept-landing-page-mobile-website-development-isometric-131224218.jpg"
+              alt=""
+            />
+            <a class="project-link" href=""
+              ><button class="btn-warning btn-block">Project</button></a
+            >
+          </div>
+          <div class="project-tile">
+            <img
+              id="project-img"
+              src="https://thumbs.dreamstime.com/z/isometric-programmer-coding-new-project-web-developer-programming-concept-landing-page-mobile-website-development-isometric-131224218.jpg"
+              alt=""
+            />
+            <a class="project-link" href=""
+              ><button class="btn-warning btn-block">Project</button></a
+            >
+          </div>
+        </div>
+      </section> -->
+      <section class="skills" id="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class="skill-img-python" src="images\python.png" alt="" />
+          <h3>Python Programming</h3>
+          <p>
+            I had some prior knowledge of C, but Python inspired me to dive deep
+            into The World of Programming. Apart from generalised Python, I also
+            have working knowledge of Web Designing frameworks like Django &
+            Flask.
+          </p>
+        </div>
+        <div class="skill-row">
+          <img class="skill-img-web" src="images\web-design.png" alt="" />
+          <h3>Web Development</h3>
+          <p>
+            I am fond of Internet, Aesthetics & Design and thus I ❤️ Web
+            Development. I have learned all essentials of web developement like
+            HTML, CSS, Bootstrap, JavaScript, SQLite, etc from the best teachers
+            of the world.
+          </p>
+        </div>
+        <div class="skill-row">
+          <img class="skill-img-version" src="images\version.png" alt="" />
+          <h3>Version Control: Git & Github</h3>
+          <p>
+            Knowledge of Version Control tools is must for any developer. I have
+            wokring knowledge of most used version control tools such as Git &
+            GitHub
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section class="contact-me" id="contact">
+        <h2>Get In Touch</h2>
+        <h3>Wanna invite me for interview or have projects for me?</h3>
+        <p class="contact-message">
+          Feel free to contact me on my email or let's connect on the following
+          professional networking platforms.
+        </p>
+        <a class="btn" href="mailto:sachinbhutekar24.12@gmail.com"
+          >CONTACT ME</a
+        >
+      </section>
+    </main>
+    <footer class="bottom-container" id="footer">
+      <a
+        id="profile-link"
+        target="_blank"
+        class="footer-link"
+        href="https://www.linkedin.com/in/sachin-bhutekar-cs/"
+        >LinkedIn</a
+      >
+      <a
+        id="profile-link"
+        target="_blank"
+        class="footer-link"
+        href="https://github.com/sachinbhutekarcs"
+        >Github</a
+      >
+      <a
+        id="profile-link"
+        target="_blank"
+        class="footer-link"
+        href="https://sachin-bhutekar-cs.medium.com/"
+        >Medium</a
+      >
+      <p id="copyright">© 2020 Sachin Bhutekar.</p>
+    </footer>
+  </body>
 </html>

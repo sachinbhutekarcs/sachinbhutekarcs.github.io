@@ -78,7 +78,7 @@ hr {
 
 #welcome-section {
   height: 100vh;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .intro {
@@ -166,18 +166,6 @@ hr {
 }
 
 /* Projects */
-#projects {
-  padding: 10% 7%;
-}
-.all-projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  align-content: center;
-  justify-items: center;
-  padding: 20px;
-  gap: 50px;
-}
 
 #project-img {
   width: 100%;
@@ -185,6 +173,17 @@ hr {
 
 .project-title button {
   padding: 10px;
+}
+
+.carousel-img {
+  border-radius: 20px;
+}
+
+.carousel {
+  width: 70%;
+  height: 100%;
+  margin: 100px auto;
+  text-align: center;
 }
 
 @media screen and (min-width: 600px) {

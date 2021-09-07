@@ -1,4 +1,5 @@
 body {
+  background-color: #eaf6f6;
   color: #40514e;
   margin: 0;
   text-align: center;
@@ -110,14 +111,14 @@ hr {
   padding-bottom: 30px;
 }
 
-.skill-img-version {
+.skill-img-web {
   width: 40%;
   float: right;
   padding-left: 30px;
 }
 
 .skill-img-python,
-.skill-img-web {
+.skill-img-version {
   width: 40%;
   float: left;
   padding-right: 30px;
